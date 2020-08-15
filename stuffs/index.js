@@ -1,12 +1,11 @@
-function cockroachSpeed(s) {
+function cockroachSpeed() {
     //Good Luck!
-
-    let spd = s
+    let spd = document.getElementById("speed").value
     spd = spd * 100000
     spd = spd / 3600
 
     console.log(spd)
+    
+    document.getElementById("ans").innerHTML = spd
     return Math.floor(spd)
   }
-
-  cockroachSpeed(1.08)
